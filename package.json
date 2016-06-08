@@ -1,6 +1,6 @@
 {
   "name": "simple-https-server",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "locally serve static files",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/radek-novak/simple-https-server.git"
   },
   "keywords": [
-    "https"
+    "https", "server"
   ],
   "preferGlobal": true,
   "bin": {
