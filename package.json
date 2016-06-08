@@ -2,7 +2,6 @@
   "name": "simple-https-server",
   "version": "0.0.1",
   "description": "locally serve static files",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "(cd cert && ./certificate.sh)",
@@ -15,7 +14,11 @@
   "keywords": [
     "https"
   ],
-  "author": "Radek Novak <radek.novak.cze@gmail.com> (http://radek-novak.com/)",
+  "preferGlobal": true,
+  "bin": {
+    "simple-https-server": "index.js"
+  },
+  "author": "Radek Novak <radek.novak.cze@gmail.com> (http://radeknovak.net/)",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/radek-novak/simple-https-server/issues"

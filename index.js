@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 var https = require('https');
 var fs = require('fs');
 var finalhandler = require('finalhandler');
@@ -11,8 +13,10 @@ var options = {
   cert: fs.readFileSync(CERT_DIR + 'cert.pem')
 };
 
-var a = https.createServer(options, function (req, res) {
 
+console.log('Starting server on HTTPS://localhost:8000...')
+
+var httpsServer = https.createServer(options, function (req, res) {
   var done = finalhandler(req, res);
   serve(req, res, done);
 }).listen(8000);
