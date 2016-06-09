@@ -1,10 +1,10 @@
 {
   "name": "simple-https-server",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "locally serve static files",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "(cd cert && ./certificate.sh)",
+    "postinstall": "(cd `npm root -g`/simple-https-server/cert && ./certificate.sh)",
     "start": "node index.js"
   },
   "repository": {
